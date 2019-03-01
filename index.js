@@ -41,5 +41,5 @@ app.post('/login', (req, res) => {
     username: user.username
   }, "mykey", {expiresIn: "3 hours"});
 
-  res.status(200).send({access_token: token})
+  res.status(200).send({access_token: token} `Welcome ${user.username}`)
   })
